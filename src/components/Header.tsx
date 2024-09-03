@@ -1,22 +1,29 @@
 import { LogIn } from "lucide-react";
+import { Button } from "./ui/button";
+import { SignedOut, SignedIn } from "@clerk/nextjs";
 
 export function Header() {
   return (
-    <header className="bg-primary-500 text-white relative overflow-hidden">
+    <header className="bg-primary-950 text-white relative overflow-hidden">
       <div className="absolute flex justify-end w-full px-8  py-4">
-        <div className="flex gap-8 items-center">
+        <div className="flex justify-center flex-wrap gap-x-8 gap-y-2 items-center">
           <a href="/">Actualizaciones</a>
           <a href="/">Github</a>
-          <a
-            className="bg-gray-500 px-2 py-2 rounded-md flex gap-2 items-center"
-            href="/"
-          >
-            <LogIn size={16} />
-            <span>Iniciar sesion</span>
-          </a>
+          <SignedOut>
+            <Button disabled variant={"ghost"}>
+              <LogIn className="mr-2" size={16} />
+              Iniciar sesión
+            </Button>
+          </SignedOut>
+          <SignedIn>
+            <Button disabled variant={"ghost"}>
+              <LogIn className="mr-2" size={16} />
+              Cerrar Sesión
+            </Button>
+          </SignedIn>
         </div>
       </div>
-      <div className="h-64 md:h-9es6 flex items-center justify-center">
+      <div className="h-64 md:h-64 flex items-center justify-center">
         <a href="/" className="text-white text-2xl md:text-4xl font-bold">
           ReadmeAi
         </a>

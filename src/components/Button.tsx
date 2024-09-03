@@ -13,7 +13,7 @@ export function Button({
   return (
     <button
       className="bg-primary-500 ring-primary-500 hover:bg-primary-600 hover:ring-primary-600 focus:ring-primary-600 focus:outline-none
-     text-white px-4 py-2 rounded-md flex gap-2"
+     text-white px-4 py-2 rounded-md flex items-center gap-2"
       {...props}
     >
       {startContent}
