@@ -7,7 +7,7 @@ export function Header() {
     <header className="bg-primary-950 text-white relative overflow-hidden">
       <div className="absolute flex justify-end w-full px-8  py-4">
         <div className="flex justify-center flex-wrap gap-x-8 gap-y-2 items-center">
-          <a href="https://github.com/QuesoCaliente/readmeai/CHANGELOG.MD" target="_blank">Actualizaciones</a>
+          <a href="https://github.com/QuesoCaliente/readmeai/blob/main/CHANGELOG.md" target="_blank">Actualizaciones</a>
           <a href="https://github.com/QuesoCaliente/readmeai" target="_blank">Github</a>
           <SignedOut>
             <Button disabled variant={"ghost"}>

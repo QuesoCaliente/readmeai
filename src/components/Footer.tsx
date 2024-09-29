@@ -8,7 +8,7 @@ export function Footer() {
           <a href="https://x.com/Quesocaliente0" target="_blank" className="text-white">
             Twitter
           </a>
-          <a href="https://github.com/QuesoCaliente/readmeai/CHANGELOG.MD" target="_blank" className="text-white">
+          <a href="https://github.com/QuesoCaliente/readmeai/blob/main/CHANGELOG.md" target="_blank" className="text-white">
             Actualizaciones
           </a>
         </div>
