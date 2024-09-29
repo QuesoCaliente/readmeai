@@ -1,6 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { set, z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Form,
@@ -180,21 +180,8 @@ export default function ProjectForm({ project }: ProjectFormProps) {
                           data.owner,
                           data.repo
                         );
-
-                      const image = await fetch("/api/image", {
-                        method: "POST",
-                        headers: {
-                          "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                          repository: value,
-                        }),
-                      }).then((res) => {
-                        setIsLoading(false);
-                        return res.text();
-                      });
-                      form.setValue("image", image);
                       form.setValue("technologies", Object.keys(languages));
+                      setIsLoading(false);
                     }}
                     placeholder="https://github.com/QuesoCaliente/AssetBox"
                     {...rest}

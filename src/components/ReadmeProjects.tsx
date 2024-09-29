@@ -27,6 +27,7 @@ import { useToast } from "./ui/use-toast";
 import { GithubService } from "@/lib/githubService";
 import { Button } from "./ui/button";
 import { IGithubOctokitRepository } from "@/lib/interface";
+import { useUser } from "@clerk/nextjs";
 
 export function ReadmeProjects() {
   const {
@@ -43,6 +44,7 @@ export function ReadmeProjects() {
   );
   const [editProject, setEditProject] = useState<IProject | null>(null);
   const { toast } = useToast();
+  const user = useUser();
   return (
     <section className="lg:min-w-80 flex flex-col gap-8">
       <div className="flex gap-1.5">
@@ -82,6 +84,7 @@ export function ReadmeProjects() {
         >
           <DialogTrigger asChild>
             <Button
+              disabled={!user?.isSignedIn}
               onClick={() => {
                 githubService
                   .getPublicAndPrivateRepositories()

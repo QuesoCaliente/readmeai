@@ -11,11 +11,17 @@ export async function POST(req: Request) {
     userGithub.owner,
     userGithub.repo
   );
-
+  if (!githubRepository.homepage) {
+    return new Response("", {
+      headers:{
+        "Content-Type": "text/plain",
+      }
+    })
+  }
   const imageBase64 = githubRepository.homepage
     ? await githubService.createScreenshotRepository(githubRepository)
     : "";
-
+  console.log(imageBase64);
   return new Response(imageBase64, {
     headers: {
       "Content-Type": "text/plain",

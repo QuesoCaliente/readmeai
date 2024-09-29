@@ -4,7 +4,6 @@ import { convertToCoreMessages, streamText } from "ai";
 import { auth, clerkClient } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import { Octokit } from "octokit";
-convertToCoreMessages;
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 

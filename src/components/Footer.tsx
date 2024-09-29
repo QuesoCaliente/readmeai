@@ -5,10 +5,10 @@ export function Footer() {
     <footer className="bg-primary-950 text-gray-300">
       <div className="p-8 flex flex-col gap-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <a href="/" className="text-white">
+          <a href="https://x.com/Quesocaliente0" target="_blank" className="text-white">
             Twitter
           </a>
-          <a href="/" className="text-white">
+          <a href="https://github.com/QuesoCaliente/readmeai/CHANGELOG.MD" target="_blank" className="text-white">
             Actualizaciones
           </a>
         </div>
