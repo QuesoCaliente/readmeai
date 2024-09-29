@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ReadmeAI
 
-## Getting Started
+[![Stars](https://img.shields.io/github/stars/QuesoCaliente/readmeai)](https://github.com/QuesoCaliente/readmeai/stargazers)
+[![Forks](https://img.shields.io/github/forks/QuesoCaliente/readmeai)](https://github.com/QuesoCaliente/readmeai/network/members)
+[![Issues](https://img.shields.io/github/issues/QuesoCaliente/readmeai)](https://github.com/QuesoCaliente/readmeai/issues)
+[![Contributions](https://img.shields.io/github/contributors/QuesoCaliente/readmeai)](https://github.com/QuesoCaliente/readmeai/graphs/contributors)
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ReadmeAI es una aplicación que te ayuda a generar archivos README profesionales y atractivos para tus proyectos. Olvídate de las plantillas aburridas y deja que la IA haga el trabajo por ti.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ¿Cómo funciona?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+¡Es muy sencillo! Solo sigue estos pasos:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Nuevo Proyecto:** Haz clic en el botón "Nuevo Proyecto".
+2. **Completa los Datos:** Ingresa la información relevante sobre tu proyecto, como el nombre, descripción, tecnologías utilizadas, etc.
+3. **Selecciona tu Proyecto:** Elige el proyecto para el que deseas generar el README.
+4. **Genera tu README:** Envía un mensaje a la IA con la solicitud para generar tu README.
 
-## Learn More
+## Tecnologías Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js:** Framework para el desarrollo de aplicaciones web.
+- **Tailwind CSS:** Framework CSS de código abierto.
+- **Clerk:** Plataforma de autenticación de aplicaciones web.
+- **AI:** Herramienta de generación de texto basada en inteligencia artificial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Empezando
 
-## Deploy on Vercel
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/QuesoCaliente/readmeai.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd readmeai
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia la aplicación:
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar ReadmeAI, no dudes en abrir un pull request.
+
+## Enlaces
+
+- **Repositorio:** https://github.com/QuesoCaliente/readmeai
+
+¡Esperamos que ReadmeAI te ayude a crear READMEs increíbles para tus proyectos!
